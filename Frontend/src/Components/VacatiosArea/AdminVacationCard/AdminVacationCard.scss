@@ -1,0 +1,174 @@
+$regal-blue: #034378;
+$san-juan: #2d4e68;
+$bermuda: #77d7b9;
+$white: #fff;
+$black: #000;
+
+@mixin cf {
+
+    &::before,
+    &::after {
+        Content: '';
+        display: table;
+    }
+
+    &::after {
+        clear: both;
+    }
+}
+
+.AdminVacationCard .DeleteIcon {
+    :hover {
+        color: red;
+    }
+}
+
+.AdminVacationCard .EditIcon {
+    :hover {
+        color: greenyellow;
+    }
+}
+
+.AdminVacationCard>.Card {
+    float: left;
+    margin: 1rem 2rem;
+
+    .MenuContent {
+        @include cf;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            display: inline-block;
+        }
+
+        a {
+            color: $white;
+        }
+
+        span {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            font-size: 10px;
+            font-weight: 700;
+            font-family: 'Open Sans';
+            transform: translate(-50%, 0);
+        }
+    }
+
+    .Wrapper {
+        background-color: $white;
+        height: 300px;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 19px 38px rgba($black, 0.3), 0 15px 12px rgba($black, 0.2);
+        border-radius: 10px;
+
+        &:hover {
+            .Data {
+                background-color: rgba($black, 0.3);
+                transform: translateY(0);
+                height: 240px;
+            }
+        }
+    }
+
+    .Data {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        transform: translateY(calc(70px + 1em));
+        transition: transform 0.3s;
+
+        .Content {
+            padding: 1em;
+            position: relative;
+            z-index: 1;
+        }
+    }
+
+    .Title {
+        margin-top: 10px;
+    }
+
+    .Text {
+        height: 70px;
+        margin: 0;
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    input[type='checkbox']:checked+.MenuContent {
+        transform: translateY(-60px);
+    }
+}
+
+.AdminVacationCard>.Card {
+    .Wrapper {
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        &:hover {
+            .MenuContent {
+                span {
+                    transform: translate(-50%, -8px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .Header {
+        @include cf;
+        color: $white;
+        padding: 0.2em 0.7em;
+
+        .Date {
+            text-align: left;
+            float: left;
+            font-size: 12px;
+
+        }
+    }
+
+    .MenuContent {
+        float: right;
+
+        li {
+            margin: 0 5px;
+            position: relative;
+        }
+
+        span {
+            transition: all 0.3s;
+            opacity: 0;
+        }
+    }
+
+    .Data {
+        color: $white;
+        transform: translateY(calc(70px + 4em));
+        height: 200px;
+
+        .Title {
+            margin-bottom: 5px;
+        }
+
+        .Text {
+            overflow-wrap: break-word;
+        }
+    }
+
+    .Title {
+        a {
+            color: $white;
+        }
+    }
+
+}

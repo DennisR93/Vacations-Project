@@ -1,0 +1,9 @@
+.About {
+    color: white;
+}
+
+.About>p {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin: 0 auto;
+}

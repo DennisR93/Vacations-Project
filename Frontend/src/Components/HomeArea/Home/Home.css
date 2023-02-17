@@ -1,0 +1,8 @@
+.Home {
+    margin-top: 20px;
+    color: white;
+}
+
+.Home>img {
+    width: 35%;
+}

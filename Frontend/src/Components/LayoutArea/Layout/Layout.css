@@ -1,0 +1,22 @@
+.Layout {
+    background-image: url("../../../Assets/Images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-columns: repeat(6, 1fr);
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.Layout>header,
+.Layout>footer,
+.Layout>main {
+    grid-column: span 6;
+}
+
+.Layout>main {
+    overflow: auto;
+}

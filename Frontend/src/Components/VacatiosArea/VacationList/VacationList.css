@@ -1,0 +1,88 @@
+.VacationList>.Add {
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.VacationList>.Chart {
+    position: absolute;
+    top: 80px;
+    right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.VacationList>.Add:hover {
+    color: greenyellow
+}
+
+.VacationList>.Chart:hover {
+    color: crimson;
+}
+
+.VacationList>.FollowersVacations {
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    width: 40px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.VacationList label {
+    color: rgba(255, 255, 255, 0.6)
+}
+
+.VacationList>.VacationsContainer {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 30% 30% 30%;
+    gap: 20px;
+    padding-left: 0;
+
+}
+
+.VacationList>.Pagination {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: medium;
+    gap: 20px;
+}
+
+.VacationList>.Pagination>button {
+    padding: 0.7em 2em;
+    width: 150px;
+}
+
+.VacationList>.Pagination>span {
+    margin-top: 10px;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.VacationList>.Greeting {
+    width: 30%;
+    margin: 0 auto;
+}
+
+.VacationList>.Greeting>h2 {
+    color: white;
+    font-weight: bold;
+    font-size: xx-large;
+    width: 50%;
+    margin: 20px auto 40px auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.VacationList>.Greeting>p {
+    margin-bottom: 50px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}

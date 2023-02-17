@@ -1,0 +1,17 @@
+.VacationsChart>a {
+    color: white;
+    position: absolute;
+    right: 20px;
+}
+
+.VacationsChart>a:hover {
+    color: darkcyan;
+}
+
+.VacationsChart>canvas {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 75%;
+    height: 50%;
+}
